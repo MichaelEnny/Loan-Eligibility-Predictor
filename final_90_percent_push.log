@@ -1,0 +1,39 @@
+2025-09-06 20:55:50,783 - FINAL PUSH FOR 90% ACCURACY TARGET
+2025-09-06 20:55:50,784 - =================================================================
+2025-09-06 20:55:50,784 - Loading and preparing data for 90% accuracy target...
+2025-09-06 20:55:50,816 - Loaded dataset with shape: (5000, 30)
+2025-09-06 20:55:50,833 - Prepared features shape: (5000, 28)
+2025-09-06 20:55:50,834 - Target distribution: [ 561 4439] (imbalance ratio: 0.13)
+2025-09-06 20:55:50,835 - Creating mega feature set...
+2025-09-06 20:55:50,839 - Ultimate training failed: Cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "C:\Users\wisdo\OneDrive\Desktop\Data-Science-ML\Loan-Eligibility-Predictor\final_90_percent_push.py", line 678, in <module>
+    champions = main()
+  File "C:\Users\wisdo\OneDrive\Desktop\Data-Science-ML\Loan-Eligibility-Predictor\final_90_percent_push.py", line 505, in main
+    X_mega = create_mega_features(X)
+  File "C:\Users\wisdo\OneDrive\Desktop\Data-Science-ML\Loan-Eligibility-Predictor\final_90_percent_push.py", line 91, in create_mega_features
+    labels=[0, 1, 2, 3, 4]).astype(int)
+                            ~~~~~~^^^^^
+  File "C:\Users\wisdo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 6662, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\wisdo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\managers.py", line 430, in astype
+    return self.apply(
+           ~~~~~~~~~~^
+        "astype",
+        ^^^^^^^^^
+    ...<3 lines>...
+        using_cow=using_copy_on_write(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\wisdo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\managers.py", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\wisdo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\blocks.py", line 784, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File "C:\Users\wisdo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\dtypes\astype.py", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File "C:\Users\wisdo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\dtypes\astype.py", line 179, in astype_array
+    values = values.astype(dtype, copy=copy)
+  File "C:\Users\wisdo\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\arrays\categorical.py", line 577, in astype
+    raise ValueError("Cannot convert float NaN to integer")
+ValueError: Cannot convert float NaN to integer

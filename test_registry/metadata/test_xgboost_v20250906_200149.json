@@ -1,0 +1,91 @@
+{
+  "model_id": "test_xgboost_v20250906_200149",
+  "model_name": "test_xgboost",
+  "model_type": "XGBoost",
+  "version": "xgboost_v20250906_200149",
+  "created_at": "2025-09-06T20:01:49.080119",
+  "created_by": "system",
+  "status": "validation",
+  "stage": "development",
+  "training_data_hash": "",
+  "training_data_shape": [
+    0,
+    0
+  ],
+  "feature_names": [
+    "credit_score",
+    "annual_income",
+    "loan_amount",
+    "debt_to_income_ratio",
+    "years_employed",
+    "age",
+    "monthly_debt_payments",
+    "number_of_dependents",
+    "property_value",
+    "loan_term",
+    "employment_status_score",
+    "education_level_score",
+    "marital_status_score",
+    "payment_history_score",
+    "account_balance_score"
+  ],
+  "target_classes": [
+    "0",
+    "1"
+  ],
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "colsample_bylevel": 1.0,
+    "colsample_bynode": 1.0,
+    "gamma": 0,
+    "min_child_weight": 1,
+    "reg_alpha": 0,
+    "reg_lambda": 1,
+    "scale_pos_weight": 1.006269592476489,
+    "max_delta_step": 0,
+    "tree_method": "hist",
+    "n_jobs": -1,
+    "random_state": 42,
+    "verbosity": 0,
+    "eval_metric": [
+      "logloss",
+      "auc",
+      "error"
+    ]
+  },
+  "validation_metrics": {
+    "val_accuracy": 0.86875,
+    "val_precision": 0.8688076261915925,
+    "val_recall": 0.86875,
+    "val_f1_score": 0.8687448728465956,
+    "val_roc_auc": 0.92859375
+  },
+  "test_metrics": {
+    "test_accuracy": 0.905,
+    "test_precision": 0.9060150375939849,
+    "test_recall": 0.905,
+    "test_f1_score": 0.9049405878674172,
+    "test_roc_auc": 0.9533
+  },
+  "cross_validation_metrics": {},
+  "model_size_mb": 0.0,
+  "inference_time_ms": 0.0,
+  "training_time_seconds": 0.16333341598510742,
+  "deployment_target": null,
+  "deployment_date": null,
+  "deployment_config": null,
+  "business_impact": null,
+  "a_b_test_results": null,
+  "parent_model_id": null,
+  "champion_model_id": null,
+  "approval_status": null,
+  "approved_by": null,
+  "approval_date": null,
+  "tags": [],
+  "description": "Test XGBoost model",
+  "notes": null
+}

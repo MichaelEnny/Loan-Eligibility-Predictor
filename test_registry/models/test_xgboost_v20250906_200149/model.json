@@ -1,0 +1,105 @@
+{
+  "metrics": {
+    "training_time": 0.16333341598510742,
+    "validation_scores": {
+      "val_accuracy": 0.86875,
+      "val_precision": 0.8688076261915925,
+      "val_recall": 0.86875,
+      "val_f1_score": 0.8687448728465956,
+      "val_roc_auc": 0.92859375
+    },
+    "test_scores": {
+      "test_accuracy": 0.905,
+      "test_precision": 0.9060150375939849,
+      "test_recall": 0.905,
+      "test_f1_score": 0.9049405878674172,
+      "test_roc_auc": 0.9533
+    },
+    "cross_val_scores": {},
+    "feature_importance": [
+      0.02727794647216797,
+      0.10121067613363266,
+      0.08782245963811874,
+      0.08403662592172623,
+      0.039646003395318985,
+      0.04765649512410164,
+      0.11505942791700363,
+      0.06528915464878082,
+      0.030423369258642197,
+      0.048964228481054306,
+      0.07745050638914108,
+      0.055161599069833755,
+      0.11058787256479263,
+      0.05438021197915077,
+      0.05503338202834129
+    ],
+    "confusion_matrix": [
+      [
+        69,
+        11
+      ],
+      [
+        10,
+        70
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n     Class_0       0.87      0.86      0.87        80\n     Class_1       0.86      0.88      0.87        80\n\n    accuracy                           0.87       160\n   macro avg       0.87      0.87      0.87       160\nweighted avg       0.87      0.87      0.87       160\n",
+    "model_size_mb": 0.0,
+    "inference_time_ms": 0.0
+  },
+  "metadata": {
+    "model_name": "XGBoost",
+    "version": "1.0.0",
+    "created_at": "2025-09-06 20:01:48",
+    "training_data_shape": [
+      800,
+      15
+    ],
+    "feature_names": [
+      "credit_score",
+      "annual_income",
+      "loan_amount",
+      "debt_to_income_ratio",
+      "years_employed",
+      "age",
+      "monthly_debt_payments",
+      "number_of_dependents",
+      "property_value",
+      "loan_term",
+      "employment_status_score",
+      "education_level_score",
+      "marital_status_score",
+      "payment_history_score",
+      "account_balance_score"
+    ],
+    "target_classes": [
+      "0",
+      "1"
+    ],
+    "hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "colsample_bylevel": 1.0,
+      "colsample_bynode": 1.0,
+      "gamma": 0,
+      "min_child_weight": 1,
+      "reg_alpha": 0,
+      "reg_lambda": 1,
+      "scale_pos_weight": 1.006269592476489,
+      "max_delta_step": 0,
+      "tree_method": "hist",
+      "n_jobs": -1,
+      "random_state": 42,
+      "verbosity": 0,
+      "eval_metric": [
+        "logloss",
+        "auc",
+        "error"
+      ]
+    },
+    "training_config": {}
+  }
+}

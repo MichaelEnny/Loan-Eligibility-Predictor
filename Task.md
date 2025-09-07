@@ -215,7 +215,7 @@ This document provides a detailed task breakdown for implementing the Loan Eligi
 **Priority**: P0  
 **Story Points**: 6  
 **Assignee**: Backend Developer  
-**Sprint**: 1-2  
+**Sprint**: 1-2
 
 **User Story**: As a system admin, I need data validation so that only clean data enters the ML pipeline.
 

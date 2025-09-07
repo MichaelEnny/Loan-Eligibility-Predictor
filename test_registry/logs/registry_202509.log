@@ -1,0 +1,5 @@
+{"timestamp": "2025-09-06T20:00:23.252770", "event_type": "MODEL_REGISTERED", "event_data": {"model_id": "test_randomforest_v20250906_200023", "model_name": "test_randomforest", "model_type": "RandomForest", "created_by": "system"}}
+{"timestamp": "2025-09-06T20:00:23.288449", "event_type": "MODEL_REGISTERED", "event_data": {"model_id": "test_neuralnetwork_v20250906_200023", "model_name": "test_neuralnetwork", "model_type": "NeuralNetwork", "created_by": "system"}}
+{"timestamp": "2025-09-06T20:01:49.077322", "event_type": "MODEL_REGISTERED", "event_data": {"model_id": "test_randomforest_v20250906_200149", "model_name": "test_randomforest", "model_type": "RandomForest", "created_by": "system"}}
+{"timestamp": "2025-09-06T20:01:49.102106", "event_type": "MODEL_REGISTERED", "event_data": {"model_id": "test_xgboost_v20250906_200149", "model_name": "test_xgboost", "model_type": "XGBoost", "created_by": "system"}}
+{"timestamp": "2025-09-06T20:01:49.120664", "event_type": "MODEL_REGISTERED", "event_data": {"model_id": "test_neuralnetwork_v20250906_200149", "model_name": "test_neuralnetwork", "model_type": "NeuralNetwork", "created_by": "system"}}

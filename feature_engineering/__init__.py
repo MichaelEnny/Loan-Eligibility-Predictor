@@ -11,17 +11,44 @@ __version__ = "1.0.0"
 __author__ = "ML Engineering Team"
 
 from .pipeline import FeatureEngineeringPipeline
-from .encoders import CategoricalEncoder
-from .preprocessors import NumericalPreprocessor
-from .interactions import FeatureInteractionGenerator
-from .dimensionality import DimensionalityReducer
-from .config import FeaturePipelineConfig
+from .encoders import CategoricalEncoder, TargetEncoder
+from .preprocessors import NumericalPreprocessor, OutlierDetector
+from .interactions import FeatureInteractionGenerator, MathematicalTransformer
+from .dimensionality import DimensionalityReducer, FeatureSelector
+from .config import (
+    FeaturePipelineConfig,
+    CategoricalEncodingConfig,
+    NumericalPreprocessingConfig,
+    FeatureInteractionConfig,
+    DimensionalityReductionConfig,
+    create_default_loan_config
+)
 
 __all__ = [
+    # Main Pipeline
     "FeatureEngineeringPipeline",
+    
+    # Encoders
     "CategoricalEncoder", 
+    "TargetEncoder",
+    
+    # Preprocessors
     "NumericalPreprocessor",
+    "OutlierDetector",
+    
+    # Interactions
     "FeatureInteractionGenerator",
+    "MathematicalTransformer",
+    
+    # Dimensionality
     "DimensionalityReducer",
-    "FeaturePipelineConfig"
+    "FeatureSelector",
+    
+    # Configuration
+    "FeaturePipelineConfig",
+    "CategoricalEncodingConfig",
+    "NumericalPreprocessingConfig", 
+    "FeatureInteractionConfig",
+    "DimensionalityReductionConfig",
+    "create_default_loan_config"
 ]

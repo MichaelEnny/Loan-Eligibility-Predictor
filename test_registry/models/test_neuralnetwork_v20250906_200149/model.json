@@ -1,0 +1,93 @@
+{
+  "metrics": {
+    "training_time": 0.06315851211547852,
+    "validation_scores": {
+      "val_accuracy": 0.775,
+      "val_precision": 0.7751719824890557,
+      "val_recall": 0.775,
+      "val_f1_score": 0.7749648382559775,
+      "val_roc_auc": 0.84375
+    },
+    "test_scores": {
+      "test_accuracy": 0.59,
+      "test_precision": 0.59765625,
+      "test_recall": 0.59,
+      "test_f1_score": 0.5818033455732354,
+      "test_roc_auc": 0.579
+    },
+    "cross_val_scores": {},
+    "feature_importance": null,
+    "confusion_matrix": [
+      [
+        61,
+        19
+      ],
+      [
+        17,
+        63
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n     Class_0       0.78      0.76      0.77        80\n     Class_1       0.77      0.79      0.78        80\n\n    accuracy                           0.78       160\n   macro avg       0.78      0.77      0.77       160\nweighted avg       0.78      0.78      0.77       160\n",
+    "model_size_mb": 0.0,
+    "inference_time_ms": 0.0
+  },
+  "metadata": {
+    "model_name": "NeuralNetwork",
+    "version": "1.0.0",
+    "created_at": "2025-09-06 20:01:48",
+    "training_data_shape": [
+      800,
+      15
+    ],
+    "feature_names": [
+      "credit_score",
+      "annual_income",
+      "loan_amount",
+      "debt_to_income_ratio",
+      "years_employed",
+      "age",
+      "monthly_debt_payments",
+      "number_of_dependents",
+      "property_value",
+      "loan_term",
+      "employment_status_score",
+      "education_level_score",
+      "marital_status_score",
+      "payment_history_score",
+      "account_balance_score"
+    ],
+    "target_classes": [
+      "0",
+      "1"
+    ],
+    "hyperparameters": {
+      "hidden_layer_sizes": [
+        100,
+        50
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 0.001,
+      "batch_size": "auto",
+      "learning_rate": "constant",
+      "learning_rate_init": 0.001,
+      "power_t": 0.5,
+      "max_iter": 1000,
+      "shuffle": true,
+      "random_state": 42,
+      "tol": 0.0001,
+      "verbose": false,
+      "warm_start": false,
+      "momentum": 0.9,
+      "nesterovs_momentum": true,
+      "early_stopping": true,
+      "validation_fraction": 0.1,
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1e-08,
+      "n_iter_no_change": 10,
+      "max_fun": 15000
+    },
+    "training_config": {}
+  }
+}

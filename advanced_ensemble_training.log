@@ -1,0 +1,38 @@
+2025-09-06 20:26:04,943 - INFO - Starting Advanced Ensemble Model Training
+2025-09-06 20:26:04,943 - INFO - ======================================================================
+2025-09-06 20:26:04,943 - INFO - Loading and preparing data...
+2025-09-06 20:26:04,959 - INFO - Loaded dataset with shape: (5000, 30)
+2025-09-06 20:26:04,970 - INFO - Prepared features shape: (5000, 28)
+2025-09-06 20:26:04,970 - INFO - Target distribution: [ 561 4439]
+2025-09-06 20:26:04,973 - INFO - Data split:
+2025-09-06 20:26:04,973 - INFO -   Train: 4250 samples
+2025-09-06 20:26:04,973 - INFO -   Test: 750 samples
+2025-09-06 20:26:04,974 - INFO - 
+2025-09-06 20:26:04,974 - INFO - Applying advanced feature engineering...
+2025-09-06 20:26:04,985 - INFO - Feature engineering: 28 -> 78 features
+2025-09-06 20:26:05,015 - INFO - Final data shape after preprocessing: (4250, 78)
+2025-09-06 20:26:05,016 - INFO - Applying feature selection...
+2025-09-06 20:26:05,318 - INFO - Feature selection: 78 -> 39 features
+2025-09-06 20:26:05,318 - INFO - Training RandomForest...
+2025-09-06 20:26:05,319 - INFO - Performing hyperparameter optimization...
+2025-09-06 20:27:40,703 - INFO - Best params for RandomForest: {'class_weight': None, 'max_depth': 20, 'min_samples_split': 10, 'n_estimators': 300}
+2025-09-06 20:28:05,591 - INFO - RandomForest Results:
+2025-09-06 20:28:05,592 - INFO -   Accuracy: 0.8880
+2025-09-06 20:28:05,592 - INFO -   CV Score: 0.8875 ± 0.0012
+2025-09-06 20:28:05,592 - INFO -   Precision: 0.8455
+2025-09-06 20:28:05,592 - INFO -   Recall: 0.8880
+2025-09-06 20:28:05,592 - INFO -   F1-score: 0.8379
+2025-09-06 20:28:05,592 - INFO -   ROC-AUC: 0.6509
+2025-09-06 20:28:05,592 - INFO -   Training time: 120.27s
+2025-09-06 20:28:05,592 - INFO - 
+2025-09-06 20:28:05,592 - INFO - Training ExtraTrees...
+2025-09-06 20:28:07,655 - INFO - ExtraTrees Results:
+2025-09-06 20:28:07,655 - INFO -   Accuracy: 0.8733
+2025-09-06 20:28:07,655 - INFO -   CV Score: 0.8809 ± 0.0036
+2025-09-06 20:28:07,655 - INFO -   Precision: 0.8250
+2025-09-06 20:28:07,655 - INFO -   Recall: 0.8733
+2025-09-06 20:28:07,655 - INFO -   F1-score: 0.8417
+2025-09-06 20:28:07,655 - INFO -   ROC-AUC: 0.6255
+2025-09-06 20:28:07,655 - INFO -   Training time: 2.06s
+2025-09-06 20:28:07,655 - INFO - 
+2025-09-06 20:28:07,655 - INFO - Training GradientBoosting...

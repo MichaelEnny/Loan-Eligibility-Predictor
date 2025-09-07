@@ -1,0 +1,7 @@
+Model,Accuracy,Precision,Recall,F1-Score,ROC-AUC,Training_Time
+RandomForest,0.8890,0.9013,0.8890,0.8377,0.6613,0.30s
+NeuralNetwork,0.8880,0.7885,0.8880,0.8353,0.4153,0.21s
+Optimized_RF,0.8880,0.8452,0.8880,0.8372,0.6681,0.00s
+Voting_Soft,0.8840,0.8075,0.8840,0.8352,0.6641,0.55s
+Voting_Hard,0.8840,0.8175,0.8840,0.8369,N/A,0.54s
+XGBoost,0.7790,0.8177,0.7790,0.7967,0.6284,0.20s

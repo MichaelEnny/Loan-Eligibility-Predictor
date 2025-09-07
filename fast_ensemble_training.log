@@ -1,0 +1,77 @@
+2025-09-06 20:30:40,870 - INFO - =================================================================
+2025-09-06 20:30:40,870 - INFO - Loading and preparing data...
+2025-09-06 20:30:40,913 - INFO - Loaded dataset with shape: (5000, 30)
+2025-09-06 20:30:40,961 - INFO - Prepared features shape: (5000, 28)
+2025-09-06 20:30:40,962 - INFO - Target distribution: [ 561 4439]
+2025-09-06 20:30:40,972 - INFO - Feature engineering: 28 -> 36 features
+2025-09-06 20:30:40,981 - INFO - Data split:
+2025-09-06 20:30:40,981 - INFO -   Train: 4400 samples
+2025-09-06 20:30:40,981 - INFO -   Test: 600 samples
+2025-09-06 20:30:40,983 - INFO - 
+2025-09-06 20:30:41,018 - INFO - Training RandomForest_Optimized...
+2025-09-06 20:30:45,179 - INFO - RandomForest_Optimized Results:
+2025-09-06 20:30:45,179 - INFO -   Accuracy: 0.8833
+2025-09-06 20:30:45,179 - INFO -   Precision: 0.8121
+2025-09-06 20:30:45,179 - INFO -   Recall: 0.8833
+2025-09-06 20:30:45,180 - INFO -   F1-score: 0.8363
+2025-09-06 20:30:45,180 - INFO -   ROC-AUC: 0.6882
+2025-09-06 20:30:45,180 - INFO -   Training time: 3.89s
+2025-09-06 20:30:45,180 - INFO -   OOB Score: 0.8898
+2025-09-06 20:30:45,180 - INFO - 
+2025-09-06 20:30:45,180 - INFO - Training ExtraTrees_Optimized...
+2025-09-06 20:30:48,364 - INFO - ExtraTrees_Optimized Results:
+2025-09-06 20:30:48,365 - INFO -   Accuracy: 0.8867
+2025-09-06 20:30:48,365 - INFO -   Precision: 0.7890
+2025-09-06 20:30:48,365 - INFO -   Recall: 0.8867
+2025-09-06 20:30:48,365 - INFO -   F1-score: 0.8350
+2025-09-06 20:30:48,366 - INFO -   ROC-AUC: 0.6703
+2025-09-06 20:30:48,366 - INFO -   Training time: 2.86s
+2025-09-06 20:30:48,366 - INFO -   OOB Score: 0.8891
+2025-09-06 20:30:48,366 - INFO - 
+2025-09-06 20:30:48,367 - INFO - Training GradientBoosting_Optimized...
+2025-09-06 20:30:48,369 - ERROR - Failed to train GradientBoosting_Optimized: Input X contains NaN.
+GradientBoostingClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-09-06 20:30:48,369 - INFO - Training NeuralNetwork_Optimized...
+2025-09-06 20:30:48,370 - ERROR - Failed to train NeuralNetwork_Optimized: Input X contains NaN.
+MLPClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-09-06 20:30:48,371 - INFO - Training LogisticRegression_Optimized...
+2025-09-06 20:30:48,372 - ERROR - Failed to train LogisticRegression_Optimized: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-09-06 20:30:48,373 - INFO - Creating super ensemble combinations...
+2025-09-06 20:30:48,373 - INFO - Training Super_Ensemble_All...
+2025-09-06 20:30:55,900 - INFO - Super_Ensemble_All Results:
+2025-09-06 20:30:55,900 - INFO -   Accuracy: 0.8883
+2025-09-06 20:30:55,900 - INFO -   Precision: 0.8461
+2025-09-06 20:30:55,901 - INFO -   Recall: 0.8883
+2025-09-06 20:30:55,901 - INFO -   F1-score: 0.8389
+2025-09-06 20:30:55,901 - INFO -   ROC-AUC: 0.6848
+2025-09-06 20:30:55,901 - INFO -   Training time: 7.53s
+2025-09-06 20:30:55,901 - INFO - 
+2025-09-06 20:30:55,901 - INFO - Training Super_Ensemble_Top3...
+2025-09-06 20:31:04,342 - INFO - Super_Ensemble_Top3 Results:
+2025-09-06 20:31:04,343 - INFO -   Accuracy: 0.8883
+2025-09-06 20:31:04,343 - INFO -   Precision: 0.8461
+2025-09-06 20:31:04,343 - INFO -   Recall: 0.8883
+2025-09-06 20:31:04,343 - INFO -   F1-score: 0.8389
+2025-09-06 20:31:04,343 - INFO -   ROC-AUC: 0.6848
+2025-09-06 20:31:04,343 - INFO -   Training time: 8.44s
+2025-09-06 20:31:04,343 - INFO - 
+2025-09-06 20:31:04,343 - INFO - Training Tree_Ensemble...
+2025-09-06 20:31:13,832 - INFO - Tree_Ensemble Results:
+2025-09-06 20:31:13,832 - INFO -   Accuracy: 0.8883
+2025-09-06 20:31:13,832 - INFO -   Precision: 0.8461
+2025-09-06 20:31:13,832 - INFO -   Recall: 0.8883
+2025-09-06 20:31:13,832 - INFO -   F1-score: 0.8389
+2025-09-06 20:31:13,832 - INFO -   ROC-AUC: 0.6848
+2025-09-06 20:31:13,833 - INFO -   Training time: 9.49s
+2025-09-06 20:31:13,833 - INFO - 
+2025-09-06 20:31:13,833 - INFO - FINAL RESULTS SUMMARY
+2025-09-06 20:31:13,833 - INFO - =================================================================
+2025-09-06 20:31:13,845 - INFO - 
+2025-09-06 20:31:13,847 - INFO - Best performing model: Super_Ensemble_All
+2025-09-06 20:31:13,847 - INFO -    Accuracy: 0.8883
+2025-09-06 20:31:13,847 - INFO -    Gap to target: 0.0117
+2025-09-06 20:31:13,849 - INFO -    1. Collect more training data
+2025-09-06 20:31:13,849 - INFO -    2. Apply advanced feature selection
+2025-09-06 20:31:13,849 - INFO -    3. Try deep learning approaches
+2025-09-06 20:31:13,849 - INFO -    4. Implement stacking ensembles
