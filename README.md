@@ -597,13 +597,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Issues**: [GitHub Issues](https://github.com/your-org/loan-eligibility-predictor/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/your-org/loan-eligibility-predictor/discussions)
 - **Documentation**: [Wiki](https://github.com/your-org/loan-eligibility-predictor/wiki)
-
-### Maintainers
-- **Technical Lead**: [@tech-lead](https://github.com/tech-lead)
-- **ML Engineering**: [@ml-engineer](https://github.com/ml-engineer)
-- **Frontend Lead**: [@frontend-lead](https://github.com/frontend-lead)
-- **DevOps Lead**: [@devops-lead](https://github.com/devops-lead)
-
 ---
 
 <div align="center">
